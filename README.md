@@ -1,5 +1,5 @@
 # TransitionSegment <br>  
-
+###一个具有动态切换，自然过渡效果的Segment，常见于今日头条，网易新闻类，Write By Swift3.0 <br>
 ![github](https://github.com/jiabinxu/TransitionSegment/blob/master/TransitionSegment/segment2.gif?raw=true "example")<br> 
 
 ### How To Use
