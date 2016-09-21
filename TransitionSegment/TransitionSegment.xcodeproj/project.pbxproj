@@ -14,6 +14,9 @@
 		A30DBBCC1D927C930006744F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30DBBCA1D927C930006744F /* LaunchScreen.storyboard */; };
 		A30DBBD71D927C930006744F /* TransitionSegmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DBBD61D927C930006744F /* TransitionSegmentTests.swift */; };
 		A30DBBE21D927C930006744F /* TransitionSegmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DBBE11D927C930006744F /* TransitionSegmentUITests.swift */; };
+		A30DBBF31D927CF00006744F /* DXMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DBBF01D927CF00006744F /* DXMacros.swift */; };
+		A30DBBF41D927CF00006744F /* TransitionSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DBBF11D927CF00006744F /* TransitionSegmentView.swift */; };
+		A30DBBF51D927CF00006744F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DBBF21D927CF00006744F /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A30DBBDD1D927C930006744F /* TransitionSegmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionSegmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DBBE11D927C930006744F /* TransitionSegmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSegmentUITests.swift; sourceTree = "<group>"; };
 		A30DBBE31D927C930006744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30DBBF01D927CF00006744F /* DXMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXMacros.swift; sourceTree = "<group>"; };
+		A30DBBF11D927CF00006744F /* TransitionSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSegmentView.swift; sourceTree = "<group>"; };
+		A30DBBF21D927CF00006744F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		A30DBBC01D927C930006744F /* TransitionSegment */ = {
 			isa = PBXGroup;
 			children = (
+				A30DBBEF1D927CF00006744F /* TransitionSegmentView */,
 				A30DBBC11D927C930006744F /* AppDelegate.swift */,
 				A30DBBC31D927C930006744F /* ViewController.swift */,
 				A30DBBC51D927C930006744F /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				A30DBBE31D927C930006744F /* Info.plist */,
 			);
 			path = TransitionSegmentUITests;
+			sourceTree = "<group>";
+		};
+		A30DBBEF1D927CF00006744F /* TransitionSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				A30DBBF01D927CF00006744F /* DXMacros.swift */,
+				A30DBBF11D927CF00006744F /* TransitionSegmentView.swift */,
+				A30DBBF21D927CF00006744F /* UIView+Extension.swift */,
+			);
+			path = TransitionSegmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +281,9 @@
 			files = (
 				A30DBBC41D927C930006744F /* ViewController.swift in Sources */,
 				A30DBBC21D927C930006744F /* AppDelegate.swift in Sources */,
+				A30DBBF31D927CF00006744F /* DXMacros.swift in Sources */,
+				A30DBBF51D927CF00006744F /* UIView+Extension.swift in Sources */,
+				A30DBBF41D927CF00006744F /* TransitionSegmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
