@@ -1,5 +1,5 @@
 # TransitionSegment <br>  
-###一个具有动态切换，自然过渡效果的Segment，常见于今日头条，网易新闻类，Write By Swift3.0 <br>
+###一个具有视觉差切换效果的Segment，过渡效果自然 常见于今日头条，网易新闻类，Write By Swift3.0 <br>
 ![github](https://github.com/jiabinxu/TransitionSegment/blob/master/TransitionSegment/segment2.gif?raw=true "example")<br> 
 
 ### How To Use
@@ -51,7 +51,9 @@
         segmentView?.segmentDidEndMove(point: point)
     }
 ```
-
+### More Detail
+更多细节可以看具体Demo和我的简书地址
+http://www.jianshu.com/p/7ddf966e4bf3
 
 ### License
 TransitionSegment is available under the MIT license. See the LICENSE file for more info.
