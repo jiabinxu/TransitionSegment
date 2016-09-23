@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIScrollViewDelegate{
+class ViewController: UIViewController{
 
     var segmentView:TransitionSegmentView?
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController,UIScrollViewDelegate{
     
     
     func configNavi()  {
-        self.navigationController?.navigationBar.barTintColor = UIColor.brown
+
         self.title = "TransitionSegmentView"
     }
     
@@ -44,8 +44,7 @@ class ViewController: UIViewController,UIScrollViewDelegate{
         
         segmentView = TransitionSegmentView.init(frame: rect, configure: configure)
         
-        segmentView?.backgroundColor = UIColor.yellow
-        
+        ///segment的label被点击时调用
         segmentView?.setScrollClosure(tempClosure: { (index) in
             
             let point = CGPoint(x:CGFloat(index)*screenWidth,y:0)
@@ -58,7 +57,7 @@ class ViewController: UIViewController,UIScrollViewDelegate{
     
     //配置scrollview
     func configScrollView()  {
-        
+         //scrollview容器
         scrollContainer = UIScrollView.init(frame: CGRect(x:0,y:99,width:screenWidth,height:screenHeight-99))
         
         for index in 0...9 {
@@ -70,10 +69,14 @@ class ViewController: UIViewController,UIScrollViewDelegate{
             let temp2 = Float(arc4random()%255)/255
             let temp3 = Float(arc4random()%255)/255
             vc.view.backgroundColor = UIColor.init(colorLiteralRed: temp1, green: temp2, blue: temp3, alpha: 1)
+            
+            //添加子控制器
             scrollContainer?.addSubview(vc.view)
             self.addChildViewController(vc)
             
         }
+        
+        //配置scrollview容器
         scrollContainer?.contentSize = CGSize(width:10*screenWidth,height:0)
         scrollContainer?.showsHorizontalScrollIndicator = true
         scrollContainer?.delegate = self
@@ -82,6 +85,12 @@ class ViewController: UIViewController,UIScrollViewDelegate{
         self.view.addSubview(scrollContainer!)
         
     }
+
+}
+
+
+
+extension ViewController:UIScrollViewDelegate{
 
     
     //scollview滑动代理
@@ -108,9 +117,8 @@ class ViewController: UIViewController,UIScrollViewDelegate{
         
         segmentView?.segmentDidEndMove(point: point)
     }
-
     
-    
-
 }
+
+
 

@@ -82,7 +82,7 @@ class TransitionSegmentView: UIView {
         bottomContainer = UIScrollView.init(frame:rect)
         topContainer = UIScrollView.init(frame: rect)
         highlightView = UIView.init()
-        highlightView?.layer.masksToBounds = true
+        highlightView?.layer.masksToBounds = false
         
         self.configScrollView()
         
@@ -139,12 +139,12 @@ class TransitionSegmentView: UIView {
             if isHighlight {
                 
                 label.font = UIFont.systemFont(ofSize:textFont+1)
-                label.textColor = UIColor.white
+                label.textColor = configure.textSelColor
                 
             }else{
                 
                 label.font = UIFont.systemFont(ofSize:textFont)
-                label.textColor = UIColor.black
+                label.textColor = textNorColor
                 label.isUserInteractionEnabled = true
                 label.tag = index + tagAddition;
                 
